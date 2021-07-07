@@ -13,5 +13,7 @@ while (firstList.length !== secondList.length) {
     }
 }
 
+// Output
+
 console.table(firstList);
 console.table(secondList);

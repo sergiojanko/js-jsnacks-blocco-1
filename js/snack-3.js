@@ -6,10 +6,14 @@ var invited = [];
 
 // genero inviti random
 
+    var rndName;
+    var rndLastname;
+    var rndInvite;
+
 while (invited.length !== 3) {
-    var rndName = Math.floor(Math.random() * (firstnames.length));
-    var rndLastname = Math.floor(Math.random() * (lastnames.length));
-    var rndInvite = firstnames[rndName] + " " + lastnames[rndLastname];
+    rndName = Math.floor(Math.random() * (firstnames.length));
+    rndLastname = Math.floor(Math.random() * (lastnames.length));
+    rndInvite = firstnames[rndName] + " " + lastnames[rndLastname];
 
     // Verifico se il nome generato è gia presente
     if (!invited.includes(rndInvite)) {    

@@ -1,7 +1,8 @@
 // Input numero
+var num;
 
 do {
-    var num = parseInt(prompt("Inserisci un numero", "7"));
+    num = parseInt(prompt("Inserisci un numero", "7"));
 } while (isNaN(num) || num < 0);
 
 // Verifica pari/dispari e output
