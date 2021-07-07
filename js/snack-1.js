@@ -1,6 +1,7 @@
 // Inizializzazione variabili
 
 var sum = 0;
+var sumElement = document.getElementById("snack-1-sum")
 
 //Input numeri e somma (for)
 
@@ -26,3 +27,4 @@ while (i <= 5) {
 // Output
 
 console.log(sum);
+sumElement.innerHTML = sum;
