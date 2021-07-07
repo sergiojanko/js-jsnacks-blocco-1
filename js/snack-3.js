@@ -4,6 +4,8 @@ var lastnames = ["Rossi", "Bianchi", "Verdi", "Gialli", "Neri"];
 var firstnames = ["Paolo", "Luca", "Giorgio", "Elisa", "Anna", "Gianni"];
 var invited = [];
 
+var listElement = document.getElementById("snack-3-list");
+
 // genero inviti random
 
     var rndName;
@@ -24,4 +26,10 @@ while (invited.length !== 3) {
 // Output
 
 console.table(invited);
+var outputString = "";
+for (var i = 0; i < invited.length; i++) {
+    outputString += "<li>" + invited[i] + "</li>"; 
+}
+
+listElement.innerHTML = outputString;
 
